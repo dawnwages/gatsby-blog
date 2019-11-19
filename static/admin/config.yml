@@ -1,3 +1,30 @@
-//TODO: Set up config.yml based off of the files you want to edit
-//https://github.com/dawnwages/gatsby-netlify-blog/blob/master/static/admin/config.yml
-//https://www.netlifycms.org/docs/gatsby/
+backend:
+  name: git-gateway
+  branch: master
+  site_url: https://glittertech.dev
+  commit_messages:
+    create: 'Create {{collection}} "{{slug}}"'
+    update: 'Update {{collection}} "{{slug}}"'
+    delete: 'Delete {{collection}} "{{slug}}"'
+    uploadMedia: '[skip ci] Upload "{{path}}"'
+    deleteMedia: '[skip ci] Delete "{{path}}"'
+
+media_folder: static/img
+public_folder: /img
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
+      - {label: "Featured Image", name: "featuredimage", widget: image}
+      - {label: "Body", name: "body",, widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list"}
