@@ -2,6 +2,9 @@ const path = require(`path`)
 const _ = require("lodash");
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+//TODO: Is this a good add?
+//const { fmImagesToRelative } = require('gatsby-remark-relative-images')
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
@@ -32,6 +35,9 @@ exports.createPages = ({ graphql, actions }) => {
   ).then(result => {
     if (result.errors) {
       throw result.errors
+      //TODO: better error handling?
+      //result.errors.forEach(e => console.error(e.toString()))
+      //return Promise.reject(result.errors)
     }
 
     // Create blog posts pages.
@@ -78,9 +84,13 @@ exports.createPages = ({ graphql, actions }) => {
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
+  //fmImagesToRelative(node) // convert image paths for gatsby images
+
+  //console.log(node.internal.type);
 
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
+    console.log(node, value);
     createNodeField({
       name: `slug`,
       node,

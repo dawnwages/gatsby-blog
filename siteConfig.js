@@ -1,9 +1,9 @@
 module.exports = {
-  name: 'London After Midnight',
-  shortName: 'LAM',
-  description: 'A bold, minimal theme for Gatsby, focused on clean typography & beautiful imagery',
-  url: 'https://gatsby-lam.vaporwavy.io', // Domain of your site without prefix!
+  name: 'Glitter Tech',
+  shortName: 'GT',
+  description: 'Django, React, Python, JavaScript, Wagtail, Gatsby, Progressive Web Apps, authenTECH, BlackTech, QueerTech, Travel Tech, CivicTech',
+  url: 'https://glittertech.dev', // Domain of your site without prefix!
   prefix: '/',
-  author: 'Vaporwavy',
-  twitter: ''
+  author: 'Dawn Wages',
+  twitter: 'DawnWagesSays'
 }
