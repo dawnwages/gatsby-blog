@@ -7,4 +7,6 @@ thumbnail: /img/screenshot_2019-10-16-openopps-never-miss-an-opportunity.png
 tags:
   - no test
 ---
+![Image](/img/screenshot_2019-10-16-openopps-never-miss-an-opportunity.png "Image")
+
 another test
