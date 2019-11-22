@@ -9,7 +9,7 @@ backend:
     uploadMedia: '[skip ci] Upload "{{path}}"'
     deleteMedia: '[skip ci] Delete "{{path}}"'
 
-media_folder: static/img
+media_folder: content/assets
 public_folder: /img
 
 publish_mode: editorial_workflow
@@ -27,9 +27,9 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
       - {label: "Body", name: "body", widget: "markdown"}
-      #- {label: "Thumbnail", name: "thumbnail", widget: image }
-      - label: "Thumbnail"
-        name: "thumbnail"
-        widget: "custompathimage"
-        customMediaPath: "../img/"
-        rawMediaPath: "https://github.com/dawnwages/gatsby-blog/tree/master/static/img"
+      - {label: "Thumbnail", name: "thumbnail", widget: image }
+      #- label: "Thumbnail"
+      #  name: "thumbnail"
+      #  widget: "custompathimage"
+      #  customMediaPath: "../img/"
+      #  rawMediaPath: "https://github.com/dawnwages/gatsby-blog/tree/master/static/img"
