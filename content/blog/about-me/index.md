@@ -1,7 +1,7 @@
 ---
 title: About Me
 date: "2019-11-11"
-thumbnail: ./charles-deluvio-695732-unsplash.jpg
+thumbnail: ./charles-deluvio-695732-unsplash-2.jpg
 tags: [personal,pictures,philadelphia]
 description: yellow chakra. black girl magic. web developer. queer woman. djangonaut & pythonista. former project manager. future ukulele enthusiast. 
 ---
