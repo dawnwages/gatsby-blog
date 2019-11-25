@@ -10,7 +10,7 @@ backend:
     deleteMedia: '[skip ci] Delete "{{path}}"'
 
 media_folder: content/assets
-public_folder: /img
+public_folder: ../assets
 
 publish_mode: editorial_workflow
 
