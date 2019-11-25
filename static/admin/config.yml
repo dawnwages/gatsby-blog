@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: master
+  branch: old-state
   repo: dawnwages/gatsby-blog
   commit_messages:
     create: 'Create {{collection}} "{{slug}}"'
@@ -9,7 +9,7 @@ backend:
     uploadMedia: '[skip ci] Upload "{{path}}"'
     deleteMedia: '[skip ci] Delete "{{path}}"'
 
-media_folder: static/img
+media_folder: content/assets
 public_folder: /img
 
 publish_mode: editorial_workflow
