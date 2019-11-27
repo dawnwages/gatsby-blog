@@ -25,7 +25,7 @@ const AboutPage = ({ data }, location) => {
           </h2>
           <figure className="kg-card kg-image-card kg-width-full">
             <Img
-              fluid={data.benchAccounting.childImageSharp.fluid}
+              fluid={data.dawnSpeaking.childImageSharp.fluid}
               className="kg-image"
             />
             <figcaption>
@@ -58,9 +58,7 @@ const indexQuery = graphql`
         title
       }
     }
-    benchAccounting: file(
-      relativePath: { eq: "bench-accounting-49909-unsplash.jpg" }
-    ) {
+    dawnSpeaking: file(relativePath: { eq: "46926800914_8e01d841e7_o.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1360) {
           ...GatsbyImageSharpFluid
