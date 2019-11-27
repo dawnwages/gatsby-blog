@@ -15,4 +15,6 @@ tags:
   - Djangocon
   - djangocon europe
 ---
-It was an amazing experience to oraganize my first Django Girls after being brought into the django community through Django Girls in 2016.
+It was an amazing experience to organize my first Django Girls after being brought into the django community through Django Girls in 2016.
+
+![attendees and mentors, arms stretched in the sun posing for the group photo](/content/assets/djangogirls_cph19_small_bartpawlik-92.jpg "Django Girls Group in Copenhagen at DjangoCon 2019")
