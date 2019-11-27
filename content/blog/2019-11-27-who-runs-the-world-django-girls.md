@@ -15,10 +15,18 @@ tags:
   - Djangocon
   - djangocon europe
 ---
-It was an amazing experience to organize my first Django Girls after being brought into the django community through Django Girls in 2016.
+It was an amazing experience to organize my first Django Girls after being brought into the django community through Django Girls in 2016. A full, free event that guides you through creating and deploying a personal blog using HTML, CSS, Python, Django and covering concepts:
 
-![attendees and mentors, arms stretched in the sun posing for the group photo](/content/assets/djangogirls_cph19_small_bartpawlik-92.jpg "Django Girls Group in Copenhagen at DjangoCon 2019")
+* Querying a database
+* Template creation, inheritance and management
+* Forms
+* Django ORM
+* understanding your database
+* command line
+* server requests / how the internet works
+* virtual environments
+* ... and more!
 
-![alt text](/content/assets/djangogirls_cph19_small_bartpawlik-100.jpg "test image")
+To learn more about Django Girls visit <https://djangogirls.org/>
 
-![test](/content/assets/fabio-comparelli-696506-unsplash.jpg "test")
+To peruse the tutorial at your own leisure, visit <https://tutorial.djangogirls.org/en/>
