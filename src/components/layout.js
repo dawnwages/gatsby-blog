@@ -65,7 +65,7 @@ const Layout = props => {
             </div>
             <div className="social-links">
               <a
-                href="https://dawnwages.info"
+                href="http://dawnwages.info"
                 title="Personal Page"
                 target="_blank"
                 rel="noopener noreferrer"
