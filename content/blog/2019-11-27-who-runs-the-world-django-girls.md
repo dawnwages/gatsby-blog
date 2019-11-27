@@ -8,7 +8,7 @@ description: >-
   teamwork!
 featuredpost: true
 featuredimage: /content/assets/djangogirls_cph19_small_bartpawlik-92.jpg
-thumbnail: ../assets/djangogirls_cph19_small_bartpawlik-100.jpg
+thumbnail: ../assets/djangogirls_cph19_small_bartpawlik-92.jpg
 tags:
   - django
   - django girls
