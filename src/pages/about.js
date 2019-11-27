@@ -13,41 +13,37 @@ const AboutPage = ({ data }, location) => {
 
   return (
     <Layout title={siteTitle}>
-      <SEO title="About" keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
+      <SEO
+        title="About"
+        keywords={[`blog`, `gatsby`, `javascript`, `react`, `dawn`, `django`]}
+      />
 
       <article className="post-content page-template no-image">
         <div className="post-content-body">
           <h2 id="clean-minimal-and-deeply-customisable-london-is-a-theme-made-for-people-who-appreciate-simple-lines-">
-            Clean, minimal, and deeply customisable. London is a theme made for
-            people who appreciate simple lines.
+            Python and React freelance web developer.
           </h2>
           <figure className="kg-card kg-image-card kg-width-full">
             <Img
-              fluid={data.benchAccounting.childImageSharp.fluid}
+              fluid={data.dawnSpeaking.childImageSharp.fluid}
               className="kg-image"
             />
-            <figcaption>Large imagery is at the heart of this theme</figcaption>
+            <figcaption>
+              Djangocon Europe 2019 organizer - Dawn making an awkward face
+              while announcing a good friend and excellent speaker to the stage.
+            </figcaption>
           </figure>
-          <h3 id="dynamic-styles">Dynamic styles</h3>
+          <h3 id="dynamic-styles">Community Focused Engineer</h3>
           <p>
-            London comes with photo-centric main layout best suited to
-            photography, graphics portfolios and other image-heavy uses.
-          </p>
-          <p>
-            Both post and page templates are light and minimal, with all the
-            focus on the content while the design of the theme gets out of the
-            way. Beneath the hood, London enjoys the full power of the{" "}
-            <a href="https://docs.ghost.org/api/handlebars-themes/">
-              Ghost Handlebars Theme API
-            </a>{" "}
-            to provide limitless customisation options and dynamic styles.
+            I enjoy contributing back to my community. The friendships I've made
+            over the years are innumerable and invaluable. I'm thankful for the
+            opportunity to hang out with such great humans, learn and teach
+            about software engineering.
           </p>
           <p>
             Don't forget to check out the{" "}
-            <a href="https://docs.ghost.org/integrations/">
-              Ghost Integrations Directory
-            </a>{" "}
-            for more ways to integrate Ghost with your favourite services.
+            <a href="https://github.com/dawnwages">github repo</a> for more of
+            my work.
           </p>
         </div>
       </article>
@@ -62,9 +58,7 @@ const indexQuery = graphql`
         title
       }
     }
-    benchAccounting: file(
-      relativePath: { eq: "bench-accounting-49909-unsplash.jpg" }
-    ) {
+    dawnSpeaking: file(relativePath: { eq: "46926800914_8e01d841e7_o.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1360) {
           ...GatsbyImageSharpFluid

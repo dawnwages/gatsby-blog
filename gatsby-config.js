@@ -12,7 +12,12 @@ module.exports = {
     },
   },
   plugins: [
-      `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        modulePath: `${__dirname}/static/cms/cms.js`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -73,7 +78,7 @@ module.exports = {
         // develop: true, // Enable while using `gatsby develop`
         // tailwind: true, // Enable tailwindcss support
         // whitelist: ['whitelist'], // Don't remove this selector
-        ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
+        ignore: ["/ignored.css", "prismjs/", "docsearch.js/"], // Ignore files/folders
         // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
       },
     },
@@ -93,7 +98,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/sparkles_2728.png`,
       },
     },
     `gatsby-plugin-netlify`,

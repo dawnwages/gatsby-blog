@@ -10,26 +10,25 @@ backend:
     deleteMedia: '[skip ci] Delete "{{path}}"'
 
 media_folder: content/assets
-public_folder: /img
 
 publish_mode: editorial_workflow
 
 collections:
   - name: "blog"
     label: "Blog"
-    folder: 'content/blog/'
+    folder: "content/blog/"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      #- {label: "Thumbnail", name: "thumbnail", widget: image }
-      #- label: "Thumbnail"
-      #  name: "thumbnail"
-      #  widget: "custompathimage"
-      #  customMediaPath: "../img/"
-      #  rawMediaPath: "https://github.com/dawnwages/gatsby-blog/tree/master/static/img"
+fields:
+  - { label: "Title", name: "title", widget: "string" }
+  - { label: "Publish Date", name: "date", widget: "datetime" }
+  - { label: "Description", name: "description", widget: "text" }
+  - { label: "Featured Post", name: "featuredpost", widget: "boolean" }
+  - { label: "Featured Image", name: "featuredimage", widget: image }
+  - label: "Thumbnail"
+    name: "thumbnail"
+    widget: custompathimage
+    customMediaPath: "../assets/"
+    rawMediaPath: "https://raw.githubusercontent.com/dawnwages/gatsby-blog/old-state/content/assets/"
+  - { label: "Body", name: "body", widget: "markdown" }
+  - { label: "Tags", name: "tags", widget: "list" }
