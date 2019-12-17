@@ -30,7 +30,7 @@ const Layout = props => {
                 <Link to={`/`}>Home</Link>
               </li> */}
               <li className="nav-about" role="menuitem">
-                <Link to={`/about`}>About</Link>
+                <Link to={`/about`}>Hire Me</Link>
               </li>
               <li className="nav-tags" role="menuitem">
                 <Link to={`/tags`}>Tags</Link>
@@ -52,8 +52,7 @@ const Layout = props => {
               >
                 Twitter
               </a>
-            </div>
-            <div className="social-links">
+
               <a
                 href="https://github.com/dawnwages"
                 title="GitHub"
@@ -62,8 +61,7 @@ const Layout = props => {
               >
                 GitHub
               </a>
-            </div>
-            <div className="social-links">
+
               <a
                 href="http://dawnwages.info"
                 title="Personal Page"
