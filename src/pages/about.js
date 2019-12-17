@@ -103,7 +103,7 @@ const AboutPage = ({ data }, location) => {
               Python, Django, Wagtail, DRF, ECMAScript Languages: TypeScript,
               ES5 and ES6, Object Oriented JavaScript methods, Babel, webpack,
               jQuery, AJAX, HTML5, CSS3, creating design systems, custom themes,
-              Bootstrap, React 15 & 16, redux,
+              Bootstrap, React 15 & 16, redux.
             </dd>
             <br></br>
             <dt>
@@ -115,7 +115,7 @@ const AboutPage = ({ data }, location) => {
             <dd>
               Firebase, AWS, Digital Ocean, EC2, Oracle, MySQL, PostgreSQL,
               MongoDB, Linux/bash, git, Node, Express, HandlebarsJS, Jenkins,
-              Redis, Ansible, APIs, REST, npm & Yarn, docker, gulp
+              Redis, Ansible, APIs, REST, npm & Yarn, docker, gulp.
             </dd>
             <br></br>
             <dt>
@@ -137,7 +137,9 @@ const AboutPage = ({ data }, location) => {
               </span>{" "}
               Libraries and Static Site Generators
             </dt>
-            <dd>Wagtail, Django, Gatsby, Netlify CMS, Hugo, Jekyll</dd>
+            <dd>
+              React 15 & 16, Wagtail, Django, Gatsby, Netlify CMS, Hugo, Jekyll.
+            </dd>
             <br></br>
             <dt>
               <span role={"image"} aira-label={"squid"}>
@@ -147,7 +149,7 @@ const AboutPage = ({ data }, location) => {
             </dt>
             <dd>
               eCommerce, proof of concept, web chat app, data visualization,
-              CMS, social app, non profits
+              CMS, social app, non profits.
             </dd>
           </dl>
 
