@@ -14,31 +14,162 @@ const AboutPage = ({ data }, location) => {
   return (
     <Layout title={siteTitle}>
       <SEO
-        title="About"
-        keywords={[`blog`, `gatsby`, `javascript`, `react`, `dawn`, `django`]}
+        title="Hire Me"
+        keywords={[
+          `consultant`,
+          `blog`,
+          `gatsby`,
+          `javascript`,
+          `react`,
+          `dawn`,
+          `django`,
+        ]}
       />
 
       <article className="post-content page-template no-image">
         <div className="post-content-body">
-          <h2 id="clean-minimal-and-deeply-customisable-london-is-a-theme-made-for-people-who-appreciate-simple-lines-">
-            Python and React freelance web developer.
-          </h2>
+          <h2 id="">Python and React Consultant</h2>
+
+          <div className="row">
+            <div className="col-12">
+              <div
+                style={{
+                  padding: "1rem 0",
+                  textAlign: "center",
+                  background: "#1d1d1f",
+                }}
+              >
+                <h6 id="">
+                  <a href={"mailto:dawn.wages@gmail.com"}>Hire Me</a>
+                </h6>
+              </div>
+            </div>
+          </div>
+
+          <figure className="kg-card kg-image-card">
+            <Img
+              fluid={data.smallPic.childImageSharp.fluid}
+              className="kg-image small-image"
+            />
+            <figcaption>
+              taken by{" "}
+              <a href={"https://bartpawlik.format.com/"} target={"_blank"}>
+                Bartosz Pawlik
+              </a>
+            </figcaption>
+          </figure>
+          <h5 id="">
+            Dawn is a ex-project manager turned Open Source and User Experience
+            Engineer, Wagtail Core Team Member, DjangoCon Europe, Africa and US
+            organizer.
+          </h5>
+          <div className="row">
+            <div className="col-6">
+              <div
+                style={{
+                  padding: "1rem 0",
+                  textAlign: "center",
+                  background: "#1d1d1f",
+                }}
+              >
+                <a href={"https://www.github.com/dawnwages"}>GitHub</a>
+              </div>
+            </div>
+            <div className="col-6">
+              <div
+                style={{
+                  padding: "1rem 0",
+                  textAlign: "center",
+                  background: "#1d1d1f",
+                }}
+              >
+                <a href={"http://www.dawnwages.info/apps"} target={"_blank"}>
+                  Portfolio
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <h3 id="dynamic-styles">Experience</h3>
+
+          <dl>
+            <dt>
+              <span role={"image"} aira-label={"skateboard"}>
+                🛹
+              </span>{" "}
+              Front End
+            </dt>
+            <dd>
+              Python, Django, Wagtail, DRF, ECMAScript Languages: TypeScript,
+              ES5 and ES6, Object Oriented JavaScript methods, Babel, webpack,
+              jQuery, AJAX, HTML5, CSS3, creating design systems, custom themes,
+              Bootstrap, React 15 & 16, redux,
+            </dd>
+            <br></br>
+            <dt>
+              <span role={"image"} aira-label={"yarn"}>
+                🧶
+              </span>{" "}
+              Middleware and Back End
+            </dt>
+            <dd>
+              Firebase, AWS, Digital Ocean, EC2, Oracle, MySQL, PostgreSQL,
+              MongoDB, Linux/bash, git, Node, Express, HandlebarsJS, Jenkins,
+              Redis, Ansible, APIs, REST, npm & Yarn, docker, gulp
+            </dd>
+            <br></br>
+            <dt>
+              <span role={"image"} aira-label={"unicorn"}>
+                🦄
+              </span>{" "}
+              User Experience
+            </dt>
+            <dd>
+              A/B Testing, Dashboards, UX Research Interviews, Quality
+              Assurance, microconversion interaction design and eCommerce
+              merchandising, web products for eComm sales funnel and shop pages,
+              campaign reviews.
+            </dd>
+            <br></br>
+            <dt>
+              <span role={"image"} aira-label={"hamburger"}>
+                🍔
+              </span>{" "}
+              Libraries and Static Site Generators
+            </dt>
+            <dd>Wagtail, Django, Gatsby, Netlify CMS, Hugo, Jekyll</dd>
+            <br></br>
+            <dt>
+              <span role={"image"} aira-label={"squid"}>
+                🦑
+              </span>{" "}
+              Apps
+            </dt>
+            <dd>
+              eCommerce, proof of concept, web chat app, data visualization,
+              CMS, social app, non profits
+            </dd>
+          </dl>
+
           <figure className="kg-card kg-image-card kg-width-full">
             <Img
               fluid={data.dawnSpeaking.childImageSharp.fluid}
               className="kg-image"
             />
             <figcaption>
-              Djangocon Europe 2019 organizer - Dawn making an awkward face
-              while announcing a good friend and excellent speaker to the stage.
+              Djangocon Europe 2019 organizer - Dawn announcing a good friend
+              and excellent speaker to the stage.
             </figcaption>
           </figure>
-          <h3 id="dynamic-styles">Community Focused Engineer</h3>
+          <hr />
+          <h3 id="dynamic-styles"></h3>
           <p>
-            I enjoy contributing back to my community. The friendships I've made
-            over the years are innumerable and invaluable. I'm thankful for the
-            opportunity to hang out with such great humans, learn and teach
-            about software engineering.
+            She lives in Philadelphia with her{" "}
+            <a href={"http://www.dawnwages.info/theo"} target={"_blank"}>
+              dog, Thelonious "Theo" Ace Hood Monk
+            </a>{" "}
+            learning the ukulele, listening to Solange and enjoying black queer
+            femme events around the city.
           </p>
           <p>
             Don't forget to check out the{" "}
@@ -58,7 +189,14 @@ const indexQuery = graphql`
         title
       }
     }
-    dawnSpeaking: file(relativePath: { eq: "46926800914_8e01d841e7_o.jpg" }) {
+    smallPic: file(relativePath: { eq: "IMG_0676.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    dawnSpeaking: file(relativePath: { eq: "DjangoCon_hireme.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1360) {
           ...GatsbyImageSharpFluid
