@@ -170,8 +170,9 @@ const AboutPage = ({ data }, location) => {
             <a href={"http://www.dawnwages.info/theo"} target={"_blank"}>
               dog, Thelonious "Theo" Ace Hood Monk
             </a>{" "}
-            learning the ukulele, listening to music and watching anime, and
-            enjoying black queer femme events around the city.
+            learning the ukulele,{" "}
+            <a href="/animenmusic">listening to music and watching anime</a>,
+            and enjoying black queer femme events around the city.
           </p>
           <p>
             Don't forget to check out the{" "}
