@@ -1,5 +1,5 @@
 ---
-title: GatsbyJS + Wagtail + GitPod : An Introduction
+title: "GatsbyJS + Wagtail + GitPod : An Introduction"
 date: "2020-09-06"
 thumbnail:'/WagtailGatsbyGitPod.png'
 tags: [tutorial, gatsby, pycon, wagtail, gitpod]
