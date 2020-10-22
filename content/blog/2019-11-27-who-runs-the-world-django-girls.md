@@ -12,7 +12,7 @@ thumbnail: ../assets/djangogirls_cph19_small_bartpawlik-92.jpg
 tags:
   - django
   - django girls
-  - Djangocon
+  - djangocon
   - djangocon europe
 ---
 
