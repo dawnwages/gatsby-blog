@@ -4,7 +4,7 @@ date: 2020-10-22T13:08:58.684Z
 description: >-
   These are dependency errors I've come across over the years. I hate them, so I
   log them so you don't have to search the interwebs like I did.
-featuredpost: true
+featuredpost: false
 featuredimage: /content/assets/kbuxwcz.png
 thumbnail: ../assets/kbuxwcz.png
 tags:
