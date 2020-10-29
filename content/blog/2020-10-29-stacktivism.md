@@ -9,8 +9,15 @@ tags:
   - stacktivism
   - green
   - antiracist
+  - ethical
+  - accessible
+  - secure
 ---
 \# - Make your stack #antiracist
+
+\# - Make your stack #secure
+
+[Biometric Unsecurity - Carina C. Zona - DjangoCon 2020 Keynote](https://www.youtube.com/watch?v=flQZ32QBQY0)
 
 \# - Make your stack #green
 
@@ -18,6 +25,10 @@ tags:
 
 [\- Video: Planet friendly Web Development with Python - Chris Adams - Pycon Otto 2017](https://www.youtube.com/watch?v=5EDFNpF6ZSI)
 
-\# - Make your stack #anti-ableist
+\# - Make your stack #Accessible
+
+[\- @JoshWComeau is coding hands free](https://twitter.com/joshwcomeau/status/1316809020301246466?s=12)
+
+[\- Alex is a linter that helps you find gender favouring, polarising, race related, religion inconsiderate, or other unequal phrasing.](https://alexjs.com/)
 
 \# - Make your stack #ethical
