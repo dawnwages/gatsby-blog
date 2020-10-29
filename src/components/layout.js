@@ -29,6 +29,18 @@ const Layout = props => {
               {/* <li className="nav-home nav-current" role="menuitem">
                 <Link to={`/`}>Home</Link>
               </li> */}
+              <li className="nav-coffee" role="menuitem">
+                <a
+                  href="https://www.buymeacoffee.com/dawnwages"
+                  target="_blank"
+                  className="buy-me-coffee"
+                >
+                  <img
+                    src="https://cdn.buymeacoffee.com/buttons/v2/arial-green.png"
+                    alt="Buy Me A Coffee"
+                  ></img>
+                </a>
+              </li>
               <li className="nav-about" role="menuitem">
                 <Link to={`/about`}>Hire Me</Link>
               </li>

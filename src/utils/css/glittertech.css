@@ -6,3 +6,31 @@
   margin: auto;
   border-radius: 50%;
 }
+
+.buy-me-coffee {
+  padding-top: 3px !important;
+  width: 165px;
+}
+
+.post-card-content {
+  top: auto !important;
+}
+
+.post-card.with-image .post-card-content {
+  opacity: 0.8 !important;
+  top: auto !important;
+  background: rgb(0 0 0 / 0.43) !important;
+}
+
+.post-card.no-image > .post-card-content {
+  top: 0 !important;
+}
+
+.site-head-left a,
+.site-head-right a {
+  opacity: 0.7 !important;
+}
+
+.post-card-link:hover .post-card-content {
+  opacity: 1 !important;
+}

@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Bio from "../components/bio"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -43,6 +44,7 @@ class BlogPostTemplate extends React.Component {
           />
 
           <footer className="post-content-footer">
+            <Bio />
             {/* There are two options for how we display the byline/author-info.
         If the post has more than one author, we load a specific template
         from includes/byline-multiple.hbs, otherwise, we just use the

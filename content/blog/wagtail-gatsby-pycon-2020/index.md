@@ -34,7 +34,9 @@ Learn more about [GatsbyJS](https://www.gatsbyjs.com/docs/)
 - run `python manage.py startapp blog`
 - update **blog/models.py** with the following content:
 
-<pre>
+```python
+
+
 from __future__ import unicode_literals
 
 from django.db import models
@@ -62,7 +64,7 @@ class BlogIndexPage(Page):
 
 class BlogPage(Page):
     date = models.DateField("Post date")
-    intro = models.CharField(max_length=255)    
+    intro = models.CharField(max_length=255)
     author = models.CharField(max_length=255)
     body = StreamField(
         [
@@ -86,7 +88,7 @@ class BlogPage(Page):
         GraphQLString('body'),
     ]
 
-</pre>
+```
 
 #### II. Install Graphene
 
@@ -104,7 +106,7 @@ run `pip install wagtailmedia`
 
 add graphene settings to **base.py**:
 
-<pre>
+```python
 GRAPHENE = {
     'SCHEMA': 'grapple.schema.schema'
 }
@@ -112,29 +114,29 @@ GRAPPLE_APPS = {
     "home": "",
     "blog": "",
     }
-</pre>
+```
 
 #### VI. Configure URLs
 
 add two new imports to your **urls.py** file:
 
-<pre>
+```python
   from django.views.decorators.csrf import csrf_exempt
   from graphene_django.views import GraphQLView
-</pre>
+```
 
 add two new URLs to your **urls.py** file, just above the wagtail entry:
 
-<pre>
+```python
   url(r'^api/graphql', csrf_exempt(GraphQLView.as_view())),
   url(r'^api/graphiql', csrf_exempt(GraphQLView.as_view(graphiql=True, pretty=True))),
-</pre>
+```
 
 #### VII. Add the new apps to settings:
 
 add the install apps to your **settings.py** file:
 
-<pre>
+```python
 INSTALLED_APPS = (
     # ... previously installed apps
     'blog',
@@ -143,7 +145,7 @@ INSTALLED_APPS = (
     'wagtailmedia',
     'grapple',
     )
-</pre>
+```
 
 #### VIII. Migrate database
 
@@ -166,7 +168,8 @@ run `python manage.py runserver 8080`
 ##### XI. Test GraphQL
 
 - navigate to **http://localhost:8080/api/graphiql** and run the query below:
-  <pre>
+
+  ```javascript
       query articles {
         articles {
           id
@@ -176,7 +179,7 @@ run `python manage.py runserver 8080`
           body
         }
       }
-  </pre>
+  ```
 
 ##### XII. Install Gatsby globally
 
@@ -194,19 +197,17 @@ run `gatsby new site https://github.com/tm-kn/watail-graphql-api-gatsby`
 
 add this one line to a **/site/.env** file:
 
-<pre>
+```
 WAGTAIL_GRAPHQL_ENDPOINT=http://localhost:8080/graphql/
-</pre>
+```
 
 ##### XV. Run front end
 
-<pre>
+```
 cd site
 gatsby develop
-</pre>
+```
 
 > this spins up the gatsby front end at port 8000 default
 
 ### VISIT YOUR SITE RUNNING IN DEVELOPER MODE AT PORT 8000 !
-
-[@DawnWagesSays](https://twitter.com/DawnWagesSays)
