@@ -317,6 +317,7 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     margin: 3vw 0 0 0;
+    padding-top: 2rem;
   }
   .site-head-left {
     order: 2;
