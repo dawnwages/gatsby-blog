@@ -4,6 +4,7 @@ import { graphql, StaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import ProjectList from "../components/projectList"
 import PostCard from "../components/postCard"
 
 // import "../utils/global.scss"
