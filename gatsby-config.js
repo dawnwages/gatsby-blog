@@ -10,30 +10,36 @@ module.exports = {
     social: {
       twitter: siteConfig.twitter,
     },
+    projects: {
+      AtTheRoot: {
+        title: "At The Root",
+        desc: "",
+        link: "https://AtTheRoot.dev",
+        img: "content/assets/sparkles_2728.png",
+      },
+      StonedCodeKiller: {
+        title: "Stoned Code Killer",
+        desc: "",
+        link: "https://stonedcodekiller.com",
+        img: "content/assets/sparkles_2728.png",
+      },
+      VE4TM: {
+        title: "Volunteer Engineers 4 The Movement",
+        desc: "",
+        link: "https://VE4TM.dev",
+        img: "content/assets/sparkles_2728.png",
+      },
+    },
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-gtag`,
       options: {
         // The property ID; the tracking code won't be generated without it
         trackingId: "UA-29082978-1",
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: true,
-        // Setting this parameter is optional
-        anonymize: true,
-        // Setting this parameter is also optional
-        respectDNT: true,
         // Avoids sending pageview hits from custom paths
         exclude: ["/preview/**", "/do-not-track/me/too/"],
         // Delays sending pageview hits on route update (in milliseconds)
-        pageTransitionDelay: 0,
-        // Enables Google Optimize using your container Id
-        optimizeId: "UA-29082978-1",
-        // Enables Google Optimize Experiment ID
-        experimentId: "UA-29082978-1",
-        // Set Variation ID. 0 for original 1,2,3....
-        variationId: "UA-29082978-1",
-        // Any additional optional fields
         sampleRate: 5,
         siteSpeedSampleRate: 10,
         cookieDomain: "https://glittertech.dev",
