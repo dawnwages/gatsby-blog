@@ -17,8 +17,22 @@ thumbnail: ../assets/apigenerator.png
 tags:
   - documentation
 ---
-* https://docs.djangoproject.com/en/3.1/
+## Python
+
+* Docs: https://docs.djangoproject.com/en/3.1/
+* Blog: https://simpleisbetterthancomplex.com/
+
+
+
+## JavaScript
+
 * https://jamstack.wtf/#meaning
 * https://jamstack.org/
-* https://auth0.com/docs/api/authentication
-* https://vuejs.org/v2/guide/
+* Docs: https://auth0.com/docs/api/authentication
+* Docs: https://vuejs.org/v2/guide/
+
+
+
+## Polyglot
+
+*
