@@ -16,13 +16,12 @@ featuredimage: /content/assets/apigenerator.png
 thumbnail: ../assets/apigenerator.png
 tags:
   - documentation
+  - blog
 ---
 ## Python
 
 * Docs: https://docs.djangoproject.com/en/3.1/
 * Blog: https://simpleisbetterthancomplex.com/
-
-
 
 ## JavaScript
 
@@ -31,8 +30,10 @@ tags:
 * Docs: https://auth0.com/docs/api/authentication
 * Docs: https://vuejs.org/v2/guide/
 
-
-
 ## Polyglot
 
-*
+## 
+
+## Documentation Tools
+
+* https://swagger.io/blog/api-documentation/what-is-api-documentation-and-why-it-matters/
