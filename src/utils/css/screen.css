@@ -368,6 +368,7 @@ body {
     z-index: 9999;
     height: auto;
     transition: height 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    margin: 3rem 0 0 !important;
   }
 
   .site-head-open .site-head-left a,
