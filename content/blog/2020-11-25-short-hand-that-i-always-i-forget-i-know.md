@@ -5,7 +5,7 @@ description: >-
   Git, Postgres, Yarn, why am I always looking these commands up? Idk. This post
   is more for me than it is for you but I hope you gain something from it as
   well.
-featuredpost: true
+featuredpost: false
 featuredimage: /content/assets/bbbb.jpg
 thumbnail: ../assets/bbbb.jpg
 tags:
