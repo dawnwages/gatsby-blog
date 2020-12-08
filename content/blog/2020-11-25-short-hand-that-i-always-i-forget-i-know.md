@@ -11,7 +11,6 @@ thumbnail: ../assets/bbbb.jpg
 tags:
   - postgresql
   - git
-  - ""
 ---
 
 Git
