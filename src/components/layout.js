@@ -20,7 +20,7 @@ const Layout = props => {
               aria-controls="navigation"
             >
               <div className="hamburger-box">
-                <div className="hamburger-inner" />
+                <div className="hamburger-inner"> - </div>
               </div>
             </div>
           </a>
