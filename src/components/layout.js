@@ -20,11 +20,11 @@ const Layout = props => {
               aria-controls="navigation"
             >
               <div className="hamburger-box">
-                <div className="hamburger-inner"> - </div>
+                <div className="hamburger-inner">-</div>
               </div>
             </div>
           </a>
-          <nav id="swup" class="site-head-left">
+          <nav id="swup-nav" class="site-head-left">
             <ul className="nav" role="menu">
               {/* <li className="nav-home nav-current" role="menuitem">
                 <Link to={`/`}>Home</Link>
@@ -87,7 +87,7 @@ const Layout = props => {
         </div>
       </header>
       <main id="site-main" className="site-main">
-        <div id="swup" className="transition-fade">
+        <div id="swup-main" className="transition-fade">
           {children}
         </div>
       </main>
