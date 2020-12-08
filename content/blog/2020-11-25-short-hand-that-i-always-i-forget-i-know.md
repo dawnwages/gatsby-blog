@@ -1,6 +1,6 @@
 ---
 title: Short Hand That I Always I Forget I know
-date: 2020-11-25T18:17:06.094Z
+date: 2020-06-01T17:17:06.094Z
 description: >-
   Git, Postgres, Yarn, why am I always looking these commands up? Idk. This post
   is more for me than it is for you but I hope you gain something from it as
