@@ -294,9 +294,10 @@ body {
     transition: height 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
     transition-delay: 1s;
   }
+
   .site-head-left a,
   .site-head-right a {
-    margin: 12px 0;
+    margin: 8px 0;
     padding: 1px 0;
     font-size: 2.6rem;
     line-height: 1.15em;
@@ -321,12 +322,14 @@ body {
   }
   .site-head-left {
     order: 2;
+    -webkit-order: 2;
     margin: 0;
     width: 100%;
     margin-top: 1rem;
   }
   .site-head-center {
     order: 1;
+    -webkit-order: 1;
     position: static;
     z-index: auto;
     display: flex;
@@ -334,6 +337,7 @@ body {
   }
   .site-head-right {
     order: 3;
+    -webkit-order: 3;
     width: 100%;
     margin-top: 3vw;
   }
