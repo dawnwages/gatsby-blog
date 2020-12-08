@@ -11,14 +11,13 @@ thumbnail: ../assets/bbbb.jpg
 tags:
   - postgresql
   - git
-  - ''
+  - ""
 ---
+
 Git
 
-```
+```ssh
 git commit --amend --no-edit
 ```
-
-
 
 PostgreSQL
