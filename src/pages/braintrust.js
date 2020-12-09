@@ -171,7 +171,10 @@ const ElementsPage = ({ data }, location) => {
                 <li>Digital Artist.</li>
                 <li>Computer Technology and Visual Design Degree.</li>
                 <li>Loves creative writin and manga.</li>
-                <li>My partner and friend.</li>
+                <li>
+                  I'm especially honored that Mira is also my life-partner and
+                  friend.
+                </li>
               </ul>
             </dd>
             <dd>
