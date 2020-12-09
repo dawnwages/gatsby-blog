@@ -29,6 +29,12 @@ module.exports = {
         link: "https://VE4TM.dev",
         img: "content/assets/sparkles_2728.png",
       },
+      store: {
+        title: "Glitter Tech Merchandise",
+        desc: "",
+        link: "",
+        img: "content/assets/sparkles_2728.png",
+      },
     },
   },
   plugins: [
