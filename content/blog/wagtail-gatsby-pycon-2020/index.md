@@ -32,10 +32,10 @@ Learn more about [GatsbyJS](https://www.gatsbyjs.com/docs/)
 #### 0. START: Open Up Wagtail GitPod from Github
 
 - Go to: [https://github.com/wagtail/wagtail-gitpod](https://github.com/wagtail/wagtail-gitpod)
+- Click the "Open in GitPod" button, you'll then be taken to a page and click "Login to Github & Launch Workspace"
   - It will then take you to a GitPod instance created from a docker file (isnt that cool?). You're automatically given all of the requirements needed to start playing with the latest and greatest Wagtail Version.
   - If you want to learn more about what steps you're skipping by using the GitPod see the wagtail [Getting Started Docs](https://docs.wagtail.io/en/v2.0/getting_started/tutorial.html)
-- Click the "Open in GitPod" button, you'll then be taken to a page and click "Login to Github & Launch Workspace"
-  ![Wagtail GitPod Repo on Github](/WagtailGitPod.png)
+    ![Wagtail GitPod Repo on Github](/WagtailGitPod.png)
 
 Your set up should look something like this:
 ![Wagtail Gitpod Workspace](/WagtailGitPodWorkspace.png)
