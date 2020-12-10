@@ -29,6 +29,21 @@ Learn more about [Wagtail](https://docs.wagtail.io/en/stable/) and what's coming
 
 Learn more about [GatsbyJS](https://www.gatsbyjs.com/docs/)
 
+#### 0. START: Open Up Wagtail GitPod from Github
+
+- Go to: [https://github.com/wagtail/wagtail-gitpod](https://github.com/wagtail/wagtail-gitpod)
+  - It will then take you to a GitPod instance created from a docker file (isnt that cool?). You're automatically given all of the requirements needed to start playing with the latest and greatest Wagtail Version.
+  - If you want to learn more about what steps you're skipping by using the GitPod see the wagtail [Getting Started Docs](https://docs.wagtail.io/en/v2.0/getting_started/tutorial.html)
+- Click the "Open in GitPod" button, you'll then be taken to a page and click "Login to Github & Launch Workspace"
+  ![Wagtail GitPod Repo on Github](/WagtailGitPod.png)
+
+Your set up should look something like this:
+![Wagtail Gitpod Workspace](/WagtailGitPodWorkspace.png)
+
+Congratulations! You officially have a working Wagtail setup in your browser. To learn more about how to use GitPod, contribute to the same project / share workspaces, and export your work to your local machine, [you can find the GitPod docs](https://www.gitpod.io/docs/).
+
+> NOTE: GitPod Workspaces are made to be temporary and will disappear after 14 days of inactivity. This is a great tool for prototyping or for our wagtail warriors knocking out a quick application. Although the IDE is well-built and has a developer experience that rivals a native IDE, its current features don't encourage this type of development.
+
 #### I. Add Blog App
 
 - run `python manage.py startapp blog`
