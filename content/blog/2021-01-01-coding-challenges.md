@@ -30,9 +30,9 @@ System Design : How to design a distributed logging? -  <https://www.youtube.com
 
 Scalable and Reliable Logging at Pinterest (DataEngConf SF16) - <https://www.youtube.com/watch?v=DphnpWVYeG8>
 
+Part 1: Building a Centralized Logging Application - <https://hackernoon.com/part-1-building-a-centralized-logging-application-5a537033da0a>
 
-
-`Q. Live Coding Python : Create an anagram checker  `
+`Q. Live Coding Python : Create an anagram checker`
 
 `Q. Live Coding JavaScript : Look at this data tree representing parents and children. Please create a function that returns all of the childlessPerson (s) and singleParent (s)`
 
