@@ -59,7 +59,7 @@ Rating: ☆☆☆☆☆ unrated/5
 
 Clean Architecture : A Craftsman's Guide to Software Structure and Design by Robert C. Martin
 
-([BOOK LINK](https://www.goodreads.com/book/show/18043011-clean-architecture)) (NOTES LINK)
+([BOOK LINK](https://www.goodreads.com/book/show/18043011-clean-architecture)) ([NOTES LINK](http://bit.ly/2MmL1SB))
 
 Rating: ☆☆☆☆☆ unrated/5
 
