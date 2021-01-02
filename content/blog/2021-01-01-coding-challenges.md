@@ -2,12 +2,10 @@
 title: Coding Challenges
 date: 2021-01-02T01:41:01.686Z
 description: >-
-  In rare occasions there are jobs that attempt to simulate what you'll do day
+  In rare occasions, there are jobs that attempt to simulate what you'll do day
   to day, distilled into a few hours in an interview; and in every case I've
-  heard they're unrealistic and ablest -- even with attempts to accommodate
-  disabilities. It isn't productive to just lament that the industry wasn't made
-  for me, thankfully I've built a great career for myself, but occasionally I
-  enter the fray. Here's a list of my most notable exercises:
+  heard they're unrealistic and ablest -- even with attempts to accommodate for
+  disabilities.
 featuredpost: true
 featuredimage: >-
   /content/assets/288578cb-4d22-4c32-bb6e-6b0a27a28db9_kevin-ku-w7zyugynprq-unsplash.jpg
@@ -18,7 +16,11 @@ tags:
   - coding
   - interviews
 ---
-Check out my reading list to see what I've been doing to level up in my full stack engineer skills.
+It isn't productive to just lament that the industry wasn't made for me, thankfully I've built a great career for myself, but occasionally I enter the fray. Here's a list of my most notable exercises: 
+
+
+
+Check out my [reading list](/) to see what I've been doing to level up in my full stack engineer skills.
 
 \------------------------------------------
 
