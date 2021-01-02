@@ -3,8 +3,8 @@ title: 2021 Sr SE Reading List
 date: 2021-01-02T02:37:12.624Z
 description: Senior Software Engineer Reading List
 featuredpost: true
-featuredimage: /content/assets/gift-habeshaw-kstcz5ge018-unsplash.jpg
-thumbnail: ../assets/gift-habeshaw-kstcz5ge018-unsplash.jpg
+featuredimage: /content/assets/mike-von-fqbvh6dbtd8-unsplash.jpg
+thumbnail: ../assets/mike-von-fqbvh6dbtd8-unsplash.jpg
 tags:
   - reading list
   - coding
