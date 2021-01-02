@@ -18,9 +18,23 @@ tags:
 ---
 It isn't productive to just lament that the industry wasn't made for me, thankfully I've built a great career for myself, but occasionally I enter the fray. Here's a list of my most notable exercises: 
 
-
-
 Check out my [reading list](/) to see what I've been doing to level up in my full stack engineer skills.
+
+\------------------------------------------
+
+`Q. Systems Architecture Interview: "Create a Logger"`
+
+A. 
+
+System Design : How to design a distributed logging? -  <https://www.youtube.com/watch?v=JaCA_pVS_1Y>
+
+Scalable and Reliable Logging at Pinterest (DataEngConf SF16) - <https://www.youtube.com/watch?v=DphnpWVYeG8>
+
+
+
+`Q. Live Coding Python : Create an anagram checker  `
+
+`Q. Live Coding JavaScript : Look at this data tree representing parents and children. Please create a function that returns all of the childlessPerson (s) and singleParent (s)`
 
 \------------------------------------------
 
