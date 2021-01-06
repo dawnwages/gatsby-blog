@@ -16,4 +16,4 @@ tags:
 
 Wagtail Snippets Documentation: <https://docs.wagtail.io/en/stable/topics/snippets.html>
 
-We start with this map.
+We start with this map
