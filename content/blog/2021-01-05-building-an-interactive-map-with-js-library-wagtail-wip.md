@@ -12,4 +12,8 @@ tags:
   - Wagtail
   - ""
 ---
+![Map of North Carolina with major cities Asheville, Boone, Charlotte, Greensboro, Fayetteville and Wilmington labeled. Most counties are yellow, some counties are greyed out. One county is blue, indicating an active state with a modal open to it's right. In the modal it has "Orange County" title, attorney picture in round image, "Your Attorney" and under "Daniel A. Hatley". Bottom left says "Quick Look Up" and a drop down box underneath with default text "County"](/content/assets/screenshot-from-2021-01-05-19-08-05.png "The Map We Are Trying to Create from Design Specifications")
+
 Wagtail Snippets Documentation: <https://docs.wagtail.io/en/stable/topics/snippets.html>
+
+We start with this map.
