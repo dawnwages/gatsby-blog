@@ -10,6 +10,9 @@ thumbnail: ../assets/bbbb.jpg
 tags:
   - postgresql
   - git
+  - pipenv
+  - virtualenv
+  - django migrations
 ---
 # Git
 
@@ -20,6 +23,10 @@ git commit --amend --no-edit
 # PostgreSQL
 
 # Django Migrations
+
+# virtualenv
+
+* virtualenv wrapper aliases for venv users -- Tim Allen : <https://www.pyphilly.org/virtualenvwrapper-aliases-venv-users/>
 
 # Pipenv
 
