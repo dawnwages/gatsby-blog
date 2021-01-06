@@ -23,4 +23,4 @@ git commit --amend --no-edit
 
 # Pipenv
 
-* How to resolve git conflict in pipenv lockfiles. bleh
+* How to resolve git conflict in pipenv lockfiles -- Robert Rees:  <https://dev.to/rrees/resolving-git-conflicts-in-pipenv-lockfiles-2g03?signin=true>
