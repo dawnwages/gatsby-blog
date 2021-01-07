@@ -16,13 +16,22 @@ tags:
 ---
 # Git
 
-```ssh
+```shell
 git commit --amend --no-edit
 ```
 
 # PostgreSQL
 
+# Python
+
+```python
+# One liner for the terminal
+python -c "import sys; print('\n'.join(sys.path))"
+```
+
 # Django Migrations
+
+*  
 
 # virtualenv
 
