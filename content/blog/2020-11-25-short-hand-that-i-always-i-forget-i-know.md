@@ -22,6 +22,8 @@ git commit --amend --no-edit
 
 # PostgreSQL
 
+\- Super intro sh*t I always forget the order : [https://www3.ntu.edu.sg/home/ehchua/programming/sql/PostgreSQL_GetStarted.html](https://www3.ntu.edu.sg/home/ehchua/programming/sql/PostgreSQL_GetStarted.htmlhttps://www3.ntu.edu.sg/home/ehchua/programming/sql/PostgreSQL_GetStarted.html)
+
 # Python
 
 ```python
@@ -50,7 +52,6 @@ If you are on Linux
 """
     It should show something like /home/my_user/code.
 """
-
 ```
 
 # Django Migrations
