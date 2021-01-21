@@ -24,6 +24,10 @@ git commit --amend --no-edit
 
 \- Super intro sh*t I always forget the order : [https://www3.ntu.edu.sg/home/ehchua/programming/sql/PostgreSQL_GetStarted.html](https://www3.ntu.edu.sg/home/ehchua/programming/sql/PostgreSQL_GetStarted.htmlhttps://www3.ntu.edu.sg/home/ehchua/programming/sql/PostgreSQL_GetStarted.html)
 
+\- <https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-18-04>
+
+\- <https://www.digitalocean.com/community/tutorials/how-to-deploy-django-to-app-platform>
+
 # Python
 
 ```python
