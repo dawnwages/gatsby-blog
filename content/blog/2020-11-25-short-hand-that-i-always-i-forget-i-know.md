@@ -69,3 +69,18 @@ If you are on Linux
 # Pipenv
 
 * How to resolve git conflict in pipenv lockfiles -- Robert Rees:  <https://dev.to/rrees/resolving-git-conflicts-in-pipenv-lockfiles-2g03?signin=true>
+
+```python
+
+65
+
+The following should give you the paths
+
+$ pipenv --where
+/home/wonder/workspace/myproj
+
+$ pipenv --venv
+/home/wonder/PyEnvs/myproj-BKbQCeJj
+
+
+```
