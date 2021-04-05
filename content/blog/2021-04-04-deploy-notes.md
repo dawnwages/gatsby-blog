@@ -14,8 +14,6 @@ tags:
   - heroku
   - ""
 ---
-
-
 # Heroku
 
 ```
@@ -26,4 +24,4 @@ Q. Why does this randomly show up in my requirements with my pip freeze? weird. 
 
 \- Multiple Buildpacks with Heroku 
 
-https://devcenter.heroku.com/articles/using-multiple-buildpacks-for-an-app
+<https://devcenter.heroku.com/articles/using-multiple-buildpacks-for-an-app>
