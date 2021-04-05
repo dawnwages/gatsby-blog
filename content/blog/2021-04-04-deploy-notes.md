@@ -22,9 +22,15 @@ tags:
 
 Q. Why does this randomly show up in my requirements with my pip freeze? weird. Solution: just removed and it fixed the problem.
 
-\- Multiple Buildpacks with Heroku 
+**\- Multiple Buildpacks with Heroku** 
 
 <https://devcenter.heroku.com/articles/using-multiple-buildpacks-for-an-app>
+
+**\- LogDNA with Heroku**
+
+**\- CI/CD Pipeline with Heroku**
+
+
 
 # Roll Your Own
 
