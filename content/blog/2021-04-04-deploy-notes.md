@@ -30,8 +30,8 @@ Q. Why does this randomly show up in my requirements with my pip freeze? weird. 
 
 **\- CI/CD Pipeline with Heroku**
 
-
-
 # Roll Your Own
 
 \- Webpack + Django (Sept 2020) : <https://www.valentinog.com/blog/webpack-django/>
+
+\- Webpack + Django (Feb 2021)*: <https://www.accordbox.com/blog/definitive-guide-django-and-webpack/>
