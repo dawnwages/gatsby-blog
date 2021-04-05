@@ -16,8 +16,14 @@ tags:
 ---
 
 
+# Heroku
+
 ```
  ERROR: No matching distribution found for pkg-resources==0.0.0 (from -r /tmp/build_49c34ce3/requirements.txt (line 32))
 ```
 
 Q. Why does this randomly show up in my requirements with my pip freeze? weird. Solution: just removed and it fixed the problem.
+
+\- Multiple Buildpacks with Heroku 
+
+https://devcenter.heroku.com/articles/using-multiple-buildpacks-for-an-app
