@@ -22,17 +22,16 @@ tags:
 
 * Django Blog of Blogs - this is a really comprehensive list already! : <https://djangoblogs.com/>
 
-  Docs: <https://docs.djangoproject.com/en/3.1/>
-
-  The Django Book : <https://djangobook.com/>
-
-  <https://www.fullstackpython.com/>
+  * **description:** Comprehensive list of other django blogs. super meta.
+* Docs: <https://docs.djangoproject.com/en/3.1/>
+* The Django Book : <https://djangobook.com/>
+* <https://www.fullstackpython.com/>
+* <https://cheat.readthedocs.io/en/latest/django/static_files.html>
 
 ## Python
 
 * Blog: [https://simpleisbetterthancomplex.com/](<* https://simpleisbetterthancomplex.com/>)
-
-  <https://www.fullstackpython.com/>
+* <https://www.fullstackpython.com/>
 
 ## JavaScript
 
