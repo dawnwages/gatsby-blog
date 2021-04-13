@@ -70,6 +70,8 @@ If you are on Linux
 
 # Pipenv
 
+(no longer being supported) use virtualenv love <3 ;`(
+
 * How to resolve git conflict in pipenv lockfiles -- Robert Rees:  <https://dev.to/rrees/resolving-git-conflicts-in-pipenv-lockfiles-2g03?signin=true>
 
 ```python
