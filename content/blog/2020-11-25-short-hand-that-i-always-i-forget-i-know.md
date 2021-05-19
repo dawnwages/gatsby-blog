@@ -88,26 +88,35 @@ $ pipenv --venv
 
 ## \- Linux - How to end a port that's hanging out there
 
-**Step 1:**
+If you want to kill a process running on port number 8080 then first you need to find the 8080 port process identification number(PID) and then kill it. Run the following command to find 8080 port number PID:
 
-Open up cmd.exe (note: you *may* need to run it as an administrator, but this isn't always necessary), then run the below command:
+```
 
-> `netstat -ano | findstr :<PORT>`
+```
 
-(Replace `<PORT>` with the port number you want, but keep the colon)
+Here,
 
-![](https://i.stack.imgur.com/lEpCZ.png)
+* **sudo** - command to ask admin privilege(user id and password).
+* **lsof** - list of files(Also used for to list related processes)
+* **\-t** - show only process ID
+* **\-i** - show only internet connections related process
+* **:8080** - show only processes in this port number
 
-The area circled in red shows the PID (process identifier). Locate the PID of the process that's using the port you want.
+So you can now easily kill your PID using following command:
 
-**Step 2:**
+```
+sudo lsof -t -i:8080
+```
 
-Next, run the following command:
+Here,
 
-> `taskkill /PID <PID> /F`
+* kill - command to kill the process
+* \-9 - forcefully
 
-(No colon this time)
+You can use one command to to kill a process on a specific port using the following command:
 
-![](https://i.stack.imgur.com/8k64x.png)
+```
+sudo kill -9 <PID>
+```
 
-Lastly, you can check whether the operation succeeded or not by re-running the command in "Step 1". If it was successful you shouldn't see any more search results for that port number.
+For more you can see the following link [How to kill a process on a specific port on linux](https://mr-khan.gitlab.io/linux/2018/05/02/kill-specific-port-on-linux.html)
