@@ -85,3 +85,29 @@ $ pipenv --where
 $ pipenv --venv
 /home/wonder/PyEnvs/myproj-BKbQCeJj
 ```
+
+## \- Linux - How to end a port that's hanging out there
+
+**Step 1:**
+
+Open up cmd.exe (note: you *may* need to run it as an administrator, but this isn't always necessary), then run the below command:
+
+> `netstat -ano | findstr :<PORT>`
+
+(Replace `<PORT>` with the port number you want, but keep the colon)
+
+![](https://i.stack.imgur.com/lEpCZ.png)
+
+The area circled in red shows the PID (process identifier). Locate the PID of the process that's using the port you want.
+
+**Step 2:**
+
+Next, run the following command:
+
+> `taskkill /PID <PID> /F`
+
+(No colon this time)
+
+![](https://i.stack.imgur.com/8k64x.png)
+
+Lastly, you can check whether the operation succeeded or not by re-running the command in "Step 1". If it was successful you shouldn't see any more search results for that port number.
