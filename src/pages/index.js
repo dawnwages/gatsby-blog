@@ -28,6 +28,59 @@ const BlogIndex = ({ data }, location) => {
           <h2 className="page-head-title">
             {data.site.siteMetadata.description}
           </h2>
+          <div
+            className="row"
+            style={{
+              width: "100%",
+              padding: "10rem 0",
+            }}
+          >
+            <div
+              className="col-12"
+              style={{
+                padding: "1rem 0",
+                textAlign: "center",
+                background: "#1d1d1f",
+              }}
+            >
+              <form
+                action="https://buttondown.email/api/emails/embed-subscribe/GlitterTech"
+                method="post"
+                target="popupwindow"
+                onSubmit="window.open('https://buttondown.email/GlitterTech', 'popupwindow')"
+                className="embeddable-buttondown-form"
+              >
+                <h3>✨GlitterTech✨ Newsletter</h3>
+                <p
+                  className="col-8"
+                  style={{
+                    margin: "auto",
+                  }}
+                >
+                  Updates and events and things about A11y, Wagtail, Django,
+                  Python, React, JavaScript and Ethical Open Source
+                </p>
+                <label htmlFor="bd-email">Enter your email</label>
+                <div
+                  className="col-8"
+                  style={{
+                    margin: "auto",
+                  }}
+                >
+                  <input type="email" name="email" id="bd-email" />
+                </div>
+                <input type="hidden" value="1" name="embed" />
+                <div className="col-12">
+                  <input type="submit" value="Subscribe" />
+                </div>
+                <p>
+                  <a href="https://buttondown.email" target="_blank">
+                    Powered by Buttondown.
+                  </a>
+                </p>
+              </form>
+            </div>
+          </div>
         </header>
       )}
       <div className="post-feed">
