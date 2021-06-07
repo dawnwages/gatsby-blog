@@ -1,8 +1,14 @@
-import React from "react"
-import { graphql, StaticQuery } from "gatsby"
+import React, { useState, useMemo, useCallback } from "react"
+import { Box } from "grommet"
+import { graphql, StaticQuery, useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+
+import ModalEvent from "../components/ModalEvent"
+import Month from "../components/Calendar/Month"
+import groupEventsByMonth from "../utils/groupEventsByMonth"
+import { format } from "date-fns"
 
 import ProjectList from "../components/projectList"
 import PostCard from "../components/postCard"
@@ -11,10 +17,34 @@ import PostCard from "../components/postCard"
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
 //TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
+
 const BlogIndex = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
   let postCounter = 0
+
+  const [showModal, setShowModal] = useState(false)
+  const [modalData, setModalData] = useState<ModalData>()
+
+  const limitMonthInTheFuture = 3
+  console.log("month limit", limitMonthInTheFuture)
+
+  // events["edges"][0]["node"]
+  // {id: "5097a90b-ef82-56f9-b199-debebe78a3d4", eventName: "Test Event", date: "6/11/2021", eventLink: "https://www.dawnwages.info", place: "home"}
+
+  const months = useMemo(
+    () =>
+      groupEventsByMonth(
+        data.allGoogleSheetFormResponses1Row["edges"],
+        limitMonthInTheFuture
+      ),
+    [data.allGoogleSheetFormResponses1Row["edges"], limitMonthInTheFuture]
+  )
+
+  const openModal = useCallback(data => {
+    setModalData(data)
+    setShowModal(true)
+  }, [])
 
   return (
     <Layout title={siteTitle}>
@@ -81,8 +111,49 @@ const BlogIndex = ({ data }, location) => {
               </form>
             </div>
           </div>
+          <div
+            className="row"
+            style={{
+              width: "100%",
+              padding: "10rem 0",
+            }}
+          >
+            <div
+              className="col-12"
+              style={{
+                padding: "1rem 0",
+                textAlign: "center",
+              }}
+            >
+              <Box id="calendars" animation="fadeIn">
+                {months.map(month => (
+                  <Month
+                    key={format(month.startDate, "MM")}
+                    openModal={openModal}
+                    {...month}
+                  />
+                ))}
+              </Box>
+              {showModal && (
+                <ModalEvent
+                  onClose={() => setShowModal(false)}
+                  {...modalData!}
+                />
+              )}
+            </div>
+          </div>
+          {/*show modal here */}
         </header>
       )}
+      <h2
+        className="page-head-title"
+        style={{
+          padding: "1rem 0rem 10rem 1rem",
+          textAlign: "center",
+        }}
+      >
+        Posts
+      </h2>
       <div className="post-feed">
         {posts.map(({ node }) => {
           postCounter++
@@ -106,6 +177,18 @@ const indexQuery = graphql`
       siteMetadata {
         title
         description
+        monthLimit
+      }
+    }
+    allGoogleSheetFormResponses1Row {
+      edges {
+        node {
+          id
+          eventName: whatisthename
+          date: when
+          eventLink: linktotheevent
+          place: where
+        }
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {

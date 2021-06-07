@@ -1,5 +1,5 @@
 const path = require(`path`)
-const _ = require("lodash");
+const _ = require("lodash")
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 //TODO: Is this a good add?
@@ -10,7 +10,7 @@ exports.createPages = ({ graphql, actions }) => {
 
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
   const tagPage = path.resolve(`./src/templates/tag-page.js`)
-  
+
   return graphql(
     `
       {
@@ -42,7 +42,7 @@ exports.createPages = ({ graphql, actions }) => {
 
     // Create blog posts pages.
     const posts = result.data.allMarkdownRemark.edges
-    const tagSet = new Set();
+    const tagSet = new Set()
 
     posts.forEach((post, index) => {
       const previous = index === posts.length - 1 ? null : posts[index + 1].node
@@ -51,8 +51,8 @@ exports.createPages = ({ graphql, actions }) => {
       // Get tags for tags pages.
       if (post.node.frontmatter.tags) {
         post.node.frontmatter.tags.forEach(tag => {
-          tagSet.add(tag);
-        });
+          tagSet.add(tag)
+        })
       }
 
       createPage({
@@ -72,11 +72,10 @@ exports.createPages = ({ graphql, actions }) => {
         path: `/tags/${_.kebabCase(tag)}/`,
         component: tagPage,
         context: {
-          tag
-        }
-      });
-    });
-
+          tag,
+        },
+      })
+    })
 
     return null
   })
@@ -90,11 +89,29 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
-    console.log(node, value);
+    console.log(node, value)
     createNodeField({
       name: `slug`,
       node,
       value,
     })
   }
+}
+
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = `
+    type googleSheetFormResponses1Row implements Node @dontInfer {
+      id: ID!
+      parent: Node
+      children: [Node!]!
+      internal: Internal!
+      timestamp: String
+      whatisthename: String
+      when: String
+      linktotheevent: String
+      where: String
+    }
+  `
+  createTypes(typeDefs)
 }

@@ -1,9 +1,33 @@
 const urljoin = require("url-join")
 const siteConfig = require("./siteConfig")
+require("dotenv").config()
+
+const buildCredentials = ({
+  PROJECT_ID,
+  PRIVATE_KEY,
+  PRIVATE_KEY_ID,
+  CLIENT_ID,
+  CLIENT_EMAIL,
+  CERT_URL,
+}) => ({
+  type: "service_account",
+  project_id: PROJECT_ID,
+  private_key_id: PRIVATE_KEY_ID,
+  private_key: PRIVATE_KEY.replace(/(\\r)|(\\n)/g, "\n"),
+  client_email: CLIENT_EMAIL,
+  client_id: CLIENT_ID,
+  auth_uri: "https://accounts.google.com/o/oauth2/auth",
+  token_uri: "https://oauth2.googleapis.com/token",
+  auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs",
+  client_x509_cert_url: CERT_URL,
+})
+
+const SPREADSHEET_ID = "1r2oi-hqSUnFZ2CtRfhv-tRvGoKuWVSPVeTQLYIuUFgc"
 
 module.exports = {
   siteMetadata: {
     title: siteConfig.name,
+    monthLimit: siteConfig.limitMonthInTheFuture,
     author: siteConfig.author,
     description: siteConfig.description,
     siteUrl: urljoin(siteConfig.url, siteConfig.prefix),
@@ -38,6 +62,16 @@ module.exports = {
     },
   },
   plugins: [
+    `gatsby-plugin-typescript`,
+    "gatsby-plugin-styled-components",
+    {
+      resolve: "gatsby-source-google-sheets",
+      options: {
+        spreadsheetId: "1r2oi-hqSUnFZ2CtRfhv-tRvGoKuWVSPVeTQLYIuUFgc",
+        worksheetTitle: "Form Responses 1",
+        credentials: buildCredentials(process.env),
+      },
+    },
     {
       resolve: `gatsby-plugin-gtag`,
       options: {
