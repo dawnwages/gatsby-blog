@@ -58,6 +58,7 @@ const BlogIndex = ({ data }, location) => {
           <h2 className="page-head-title">
             {data.site.siteMetadata.description}
           </h2>
+          <span>Software Development and Maintenance.</span>
           <div
             className="row"
             style={{
@@ -68,7 +69,7 @@ const BlogIndex = ({ data }, location) => {
             <div
               className="col-12"
               style={{
-                padding: "1rem 0",
+                padding: ".5rem 0",
                 textAlign: "center",
                 background: "#1d1d1f",
               }}
@@ -80,24 +81,35 @@ const BlogIndex = ({ data }, location) => {
                 onSubmit="window.open('https://buttondown.email/GlitterTech', 'popupwindow')"
                 className="embeddable-buttondown-form"
               >
-                <h3>✨GlitterTech✨ Newsletter</h3>
+                <div
+                  style={{
+                    margin: "1.5em 0 0em 0",
+                    fontSize: "2.6rem",
+                  }}
+                >
+                  ✨GlitterTech✨ Newsletter
+                </div>
                 <p
                   className="col-8"
                   style={{
                     margin: "auto",
                   }}
                 >
-                  Updates and events and things about A11y, Wagtail, Django,
-                  Python, React, JavaScript and Ethical Open Source
+                  A11y, Wagtail, Django, Python, React, JavaScript and Ethical
+                  Open Source
                 </p>
-                <label htmlFor="bd-email">Enter your email</label>
                 <div
                   className="col-8"
                   style={{
                     margin: "auto",
                   }}
                 >
-                  <input type="email" name="email" id="bd-email" />
+                  <input
+                    type="email"
+                    name="email"
+                    id="bd-email"
+                    placeholder="email@email.com"
+                  />
                 </div>
                 <input type="hidden" value="1" name="embed" />
                 <div className="col-12">
@@ -111,37 +123,37 @@ const BlogIndex = ({ data }, location) => {
               </form>
             </div>
           </div>
-          <div
-            className="row"
-            style={{
-              width: "100%",
-              padding: "10rem 0",
-            }}
-          >
-            <div
-              className="col-12"
-              style={{
-                padding: "1rem 0",
-                textAlign: "center",
-              }}
-            >
-              <Box id="calendars" animation="fadeIn">
-                {months.map(month => (
-                  <Month
-                    key={format(month.startDate, "MM")}
-                    openModal={openModal}
-                    {...month}
-                  />
-                ))}
-              </Box>
-              {showModal && (
-                <ModalEvent
-                  onClose={() => setShowModal(false)}
-                  {...modalData!}
-                />
-              )}
-            </div>
-          </div>
+          {/*<div*/}
+          {/*  className="row"*/}
+          {/*  style={{*/}
+          {/*    width: "100%",*/}
+          {/*    padding: "10rem 0",*/}
+          {/*  }}*/}
+          {/*>*/}
+          {/*  <div*/}
+          {/*    className="col-12"*/}
+          {/*    style={{*/}
+          {/*      padding: "1rem 0",*/}
+          {/*      textAlign: "center",*/}
+          {/*    }}*/}
+          {/*  >*/}
+          {/*    <Box id="calendars" animation="fadeIn">*/}
+          {/*      {months.map(month => (*/}
+          {/*        <Month*/}
+          {/*          key={format(month.startDate, "MM")}*/}
+          {/*          openModal={openModal}*/}
+          {/*          {...month}*/}
+          {/*        />*/}
+          {/*      ))}*/}
+          {/*    </Box>*/}
+          {/*    {showModal && (*/}
+          {/*      <ModalEvent*/}
+          {/*        onClose={() => setShowModal(false)}*/}
+          {/*        {...modalData!}*/}
+          {/*      />*/}
+          {/*    )}*/}
+          {/*  </div>*/}
+          {/*</div>*/}
           {/*show modal here */}
         </header>
       )}
@@ -152,7 +164,7 @@ const BlogIndex = ({ data }, location) => {
           textAlign: "center",
         }}
       >
-        Posts
+        Blog
       </h2>
       <div className="post-feed">
         {posts.map(({ node }) => {

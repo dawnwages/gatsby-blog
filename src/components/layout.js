@@ -43,24 +43,33 @@ const Layout = props => {
             </a>
             <nav id="swup-nav" class="site-head-left">
               <ul className="nav" role="menu">
-                {/* <li className="nav-home nav-current" role="menuitem">
+                <li className="nav-home nav-current" role="menuitem">
                   <Link to={`/`}>Home</Link>
-                </li> */}
-                <li className="nav-coffee" role="menuitem">
-                  <a
-                    href="https://www.buymeacoffee.com/dawnwages"
-                    target="_blank"
-                    className="buy-me-coffee"
-                  >
-                    <img
-                      src="https://cdn.buymeacoffee.com/buttons/v2/arial-green.png"
-                      alt="Buy Me A Coffee"
-                    ></img>
-                  </a>
                 </li>
-                <li className="nav-about" role="menuitem">
-                  <Link to={`/about`}>Hire Me</Link>
+                <li className="nav-home nav-current" role="menuitem">
+                  <Link to={`/`}>About Us</Link>
                 </li>
+                <li className="nav-home nav-current" role="menuitem">
+                  <Link to={`/`}>Contact</Link>
+                </li>
+                <li className="nav-home nav-current" role="menuitem">
+                  <Link to={`/`}>Services</Link>
+                </li>
+                {/*<li className="nav-coffee" role="menuitem">*/}
+                {/*  <a*/}
+                {/*    href="https://www.buymeacoffee.com/dawnwages"*/}
+                {/*    target="_blank"*/}
+                {/*    className="buy-me-coffee"*/}
+                {/*  >*/}
+                {/*    <img*/}
+                {/*      src="https://cdn.buymeacoffee.com/buttons/v2/arial-green.png"*/}
+                {/*      alt="Buy Me A Coffee"*/}
+                {/*    ></img>*/}
+                {/*  </a>*/}
+                {/*</li>*/}
+                {/*<li className="nav-about" role="menuitem">*/}
+                {/*  <Link to={`/about`}>Hire Me</Link>*/}
+                {/*</li>*/}
                 <li className="nav-tags" role="menuitem">
                   <Link to={`/tags`}>Tags</Link>
                 </li>
@@ -79,26 +88,16 @@ const Layout = props => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Twitter
+                  Join Our Team
                 </a>
-
-                <a
-                  href="https://github.com/dawnwages"
-                  title="GitHub"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub
-                </a>
-
-                <a
-                  href="http://dawnwages.info"
-                  title="Personal Page"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  dawnwages.info
-                </a>
+                {/*<a*/}
+                {/*  href="https://github.com/dawnwages"*/}
+                {/*  title="GitHub"*/}
+                {/*  target="_blank"*/}
+                {/*  rel="noopener noreferrer"*/}
+                {/*>*/}
+                {/*  GitHub*/}
+                {/*</a>*/}
               </div>
             </div>
           </div>
@@ -110,14 +109,6 @@ const Layout = props => {
         </main>
         <footer className="site-foot">
           &copy; {new Date().getFullYear()} <Link to={`/`}>{title}</Link>{" "}
-          &mdash; Built with{" "}
-          <a
-            href="https://gatsbyjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Gatsby
-          </a>
         </footer>
       </div>
     </Grommet>

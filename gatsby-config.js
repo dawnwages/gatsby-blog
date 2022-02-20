@@ -1,6 +1,16 @@
 const urljoin = require("url-join")
 const siteConfig = require("./siteConfig")
 require("dotenv").config()
+const assert = require("assert")
+
+const getEnv = (env, key) => {
+  assert(
+    env[key],
+    `Please add the value for ${key} in your environment variables.`
+  )
+
+  return env[key]
+}
 
 const buildCredentials = ({
   PROJECT_ID,
@@ -64,14 +74,32 @@ module.exports = {
   plugins: [
     `gatsby-plugin-typescript`,
     "gatsby-plugin-styled-components",
-    {
-      resolve: "gatsby-source-google-sheets",
-      options: {
-        spreadsheetId: "1r2oi-hqSUnFZ2CtRfhv-tRvGoKuWVSPVeTQLYIuUFgc",
-        worksheetTitle: "Form Responses 1",
-        credentials: buildCredentials(process.env),
-      },
-    },
+    // {
+    //   resolve: "gatsby-source-google-sheets",
+    //   options: {
+    //     spreadsheetId: "1r2oi-hqSUnFZ2CtRfhv-tRvGoKuWVSPVeTQLYIuUFgc",
+    //     worksheetTitle: "responses",
+    //     credentials: {
+    //       type: 'service_account',
+    //       project_id: getEnv(process.env, 'PROJECT_ID'),
+    //       private_key_id: getEnv(process.env, 'PRIVATE_KEY_ID'),
+    //       private_key: getEnv(process.env, 'PRIVATE_KEY').replace(
+    //         /(\\r)|(\\n)/g,
+    //         '\n',
+    //       ),
+    //       client_email: getEnv(process.env, 'CLIENT_EMAIL'),
+    //       client_id: '',
+    //       auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+    //       token_uri: 'https://oauth2.googleapis.com/token',
+    //       auth_provider_x509_cert_url:
+    //         'https://www.googleapis.com/oauth2/v1/certs',
+    //       client_x509_cert_url: `https://www.googleapis.com/robot/v1/metadata/x509/${getEnv(
+    //         process.env,
+    //         'CLIENT_EMAIL',
+    //       )}`,
+    //     },
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-gtag`,
       options: {
