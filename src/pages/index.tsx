@@ -87,7 +87,7 @@ const BlogIndex = ({ data }, location) => {
                     fontSize: "2.6rem",
                   }}
                 >
-                  ✨GlitterTech✨ Newsletter
+                  ✨ Newsletter ✨
                 </div>
                 <p
                   className="col-8"
@@ -104,6 +104,7 @@ const BlogIndex = ({ data }, location) => {
                     margin: "auto",
                   }}
                 >
+                  <label htmlFor="bd-email">Enter your email</label>
                   <input
                     type="email"
                     name="email"
