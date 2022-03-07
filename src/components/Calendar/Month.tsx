@@ -18,7 +18,6 @@ const Month = ({ events, startDate, openModal }: Props) => {
   const emptyDays = 7 - ((dayNumber + days) % 7)
 
   const daysWithEvents = buildDaysWithEvents(startDate, events)
-  console.log("month object", events, daysWithEvents)
   return (
     <Box margin="medium">
       <Heading

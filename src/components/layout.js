@@ -83,8 +83,8 @@ const Layout = props => {
             <div className="site-head-right">
               <div className="social-links">
                 <a
-                  href="https://twitter.com/DawnWagesSays"
-                  title="Twitter"
+                  href="/"
+                  title="Join Our Team!"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -108,7 +108,7 @@ const Layout = props => {
           </div>
         </main>
         <footer className="site-foot">
-          &copy; {new Date().getFullYear()} <Link to={`/`}>{title}</Link>{" "}
+          &copy; {new Date().getFullYear()} <Link to={`/`}> {title}</Link>{" "}
         </footer>
       </div>
     </Grommet>

@@ -2,7 +2,7 @@
 title: 2021 Sr SE Reading List
 date: 2021-01-02T02:37:12.624Z
 description: Senior Software Engineer Reading List
-featuredpost: true
+featuredpost: false
 featuredimage: /content/assets/mike-von-fqbvh6dbtd8-unsplash.jpg
 thumbnail: ../assets/mike-von-fqbvh6dbtd8-unsplash.jpg
 tags:
@@ -13,6 +13,7 @@ tags:
   - javascript
   - software architecture
 ---
+
 ![React Design Patterns and Best Practices](/content/assets/reactdesignpatterns.png "React Design Patterns and Best Practices")
 
 React Design Principles and Best Practices by By Michele Bertoli

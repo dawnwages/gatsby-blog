@@ -20,14 +20,15 @@ import "../utils/css/screen.css"
 
 const BlogIndex = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges
+  const posts = data.allMarkdownRemark.edges.filter(p => {
+    return p.node.frontmatter.featuredpost
+  })
   let postCounter = 0
 
   const [showModal, setShowModal] = useState(false)
   const [modalData, setModalData] = useState<ModalData>()
 
   const limitMonthInTheFuture = 3
-  console.log("month limit", limitMonthInTheFuture)
 
   // events["edges"][0]["node"]
   // {id: "5097a90b-ef82-56f9-b199-debebe78a3d4", eventName: "Test Event", date: "6/11/2021", eventLink: "https://www.dawnwages.info", place: "home"}
@@ -45,8 +46,6 @@ const BlogIndex = ({ data }, location) => {
     setModalData(data)
     setShowModal(true)
   }, [])
-
-  console.log(data)
 
   return (
     <Layout title={siteTitle}>
@@ -224,6 +223,7 @@ const indexQuery = graphql`
             title
             description
             tags
+            featuredpost
             thumbnail {
               childImageSharp {
                 fluid(maxWidth: 1360) {

@@ -4,6 +4,7 @@ date: "2019-10-11"
 thumbnail: "./Djangogirls_cph19_small_BartPawlik-23.jpg"
 tags: [freelance, django, mentor, engineering]
 description: Lenovo Software Engineer => Full Time React and Django Consultant, A Year In Europe
+featuredpost: false
 ---
 
 - There is no such thing as a meritocracy. By virtue of ignoring that implicit bias and inaccessibility exists invalidates its concept. If you trace the origins of the word "meritocracy" it comes from a book [The Rise of Meritocracy](https://www.amazon.co.uk/dp/1560007044/ref=nosim?linkCode=gs2&tag=0sil8-21) by Michael Young that describes it as incongruous concept in a dystopian UK society where intelligence and merit have replaced social class. It was written a [satirical critique](https://www.theguardian.com/politics/2001/jun/29/comment).
