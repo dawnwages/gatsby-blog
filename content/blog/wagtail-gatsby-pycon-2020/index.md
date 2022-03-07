@@ -4,6 +4,7 @@ date: "2020-09-06"
 thumbnail:
 tags: [tutorial, gatsby, pycon, wagtail, gitpod, graphql, react, django]
 description: Exploring if a GatsbyJS progressive web app generator frontend with a headless Wagtail backend could be a solution for small-sized clients and personal projects when I want to "whip something up" quickly without sacrificing design, performance, hosting costs, user or site editor experience?
+featuredpost: true
 ---
 
 ![Wagtail GitPod Gatsby](./WagtailGatsbyGitPod.png)

@@ -6,10 +6,11 @@ description: >-
 
 
   These are all of the really small and really big reasons why I default to wagtail on my client projects.
-featuredpost: true
+featuredpost: false
 featuredimage: /content/assets/freddie-marriage-vschpa-ya_a-unsplash.jpg
 thumbnail: ../assets/freddie-marriage-vschpa-ya_a-unsplash.jpg
 tags:
   - wagtail
 ---
+
 # Templating Tips

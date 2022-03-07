@@ -3,8 +3,8 @@ title: Deploy Notes
 date: 2019-04-04T21:16:00.000Z
 description: |-
   Last Updated: Apr 4, 2021 17:16
-  Notes for Deploying Heroku, Digital Ocean, Python Anywhere 
-featuredpost: true
+  Notes for Deploying Heroku, Digital Ocean, Python Anywhere
+featuredpost: false
 featuredimage: /content/assets/allgo-an-app-for-plus-size-people-eqlrthvn188-unsplash.jpg
 thumbnail: ../assets/allgo-an-app-for-plus-size-people-eqlrthvn188-unsplash.jpg
 tags:
@@ -14,6 +14,7 @@ tags:
   - heroku
   - ""
 ---
+
 # Heroku
 
 ```
@@ -22,15 +23,13 @@ tags:
 
 Q. Why does this randomly show up in my requirements with my pip freeze? weird. Solution: just removed and it fixed the problem.
 
-**\- Multiple Buildpacks with Heroku** 
+**\- Multiple Buildpacks with Heroku**
 
 <https://devcenter.heroku.com/articles/using-multiple-buildpacks-for-an-app>
 
 **\- LogDNA with Heroku**
 
 **\- CI/CD Pipeline with Heroku**
-
-
 
 # Roll Your Own
 

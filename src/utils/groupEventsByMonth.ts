@@ -26,13 +26,11 @@ const groupEventsByMonth = (
   monthsDifferenceThreshold: number
 ): MonthInfo[] => {
   const today = new Date()
-  console.log(today, events, monthsDifferenceThreshold)
   const eventsByMonthKey = events
     .filter(event =>
       removeOldAndFutureEvents(event, today, monthsDifferenceThreshold)
     )
     .reduce((acc: { [key: string]: EventInfo[] }, event) => {
-      console.log(event.node.date)
       const monthYear = format(parseEventDate(event.node.date), "MM-yyyy")
       const events = acc[monthYear] || []
       return {
