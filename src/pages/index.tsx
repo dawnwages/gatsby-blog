@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useCallback } from "react"
 import { Box } from "grommet"
-import { graphql, StaticQuery, useStaticQuery } from "gatsby"
+import { graphql, StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -35,16 +35,18 @@ const BlogIndex = ({ data }, location) => {
   const months = useMemo(
     () =>
       groupEventsByMonth(
-        data.allGoogleSheetFormResponses1Row["edges"],
+        data.allGoogleRenameSheet["edges"],
         limitMonthInTheFuture
       ),
-    [data.allGoogleSheetFormResponses1Row["edges"], limitMonthInTheFuture]
+    [data.allGoogleRenameSheet["edges"], limitMonthInTheFuture]
   )
 
   const openModal = useCallback(data => {
     setModalData(data)
     setShowModal(true)
   }, [])
+
+  console.log(data)
 
   return (
     <Layout title={siteTitle}>
@@ -58,7 +60,7 @@ const BlogIndex = ({ data }, location) => {
           <h2 className="page-head-title">
             {data.site.siteMetadata.description}
           </h2>
-          <span>Software Development and Maintenance.</span>
+          <span>Software Development and Maintenance Consulting.</span>
           <div
             className="row"
             style={{
@@ -78,7 +80,12 @@ const BlogIndex = ({ data }, location) => {
                 action="https://buttondown.email/api/emails/embed-subscribe/GlitterTech"
                 method="post"
                 target="popupwindow"
-                onSubmit="window.open('https://buttondown.email/GlitterTech', 'popupwindow')"
+                onSubmit={() =>
+                  window.open(
+                    "https://buttondown.email/GlitterTech",
+                    "popupwindow"
+                  )
+                }
                 className="embeddable-buttondown-form"
               >
                 <div
@@ -124,37 +131,37 @@ const BlogIndex = ({ data }, location) => {
               </form>
             </div>
           </div>
-          {/*<div*/}
-          {/*  className="row"*/}
-          {/*  style={{*/}
-          {/*    width: "100%",*/}
-          {/*    padding: "10rem 0",*/}
-          {/*  }}*/}
-          {/*>*/}
-          {/*  <div*/}
-          {/*    className="col-12"*/}
-          {/*    style={{*/}
-          {/*      padding: "1rem 0",*/}
-          {/*      textAlign: "center",*/}
-          {/*    }}*/}
-          {/*  >*/}
-          {/*    <Box id="calendars" animation="fadeIn">*/}
-          {/*      {months.map(month => (*/}
-          {/*        <Month*/}
-          {/*          key={format(month.startDate, "MM")}*/}
-          {/*          openModal={openModal}*/}
-          {/*          {...month}*/}
-          {/*        />*/}
-          {/*      ))}*/}
-          {/*    </Box>*/}
-          {/*    {showModal && (*/}
-          {/*      <ModalEvent*/}
-          {/*        onClose={() => setShowModal(false)}*/}
-          {/*        {...modalData!}*/}
-          {/*      />*/}
-          {/*    )}*/}
-          {/*  </div>*/}
-          {/*</div>*/}
+          <div
+            className="row"
+            style={{
+              width: "100%",
+              padding: "10rem 0",
+            }}
+          >
+            <div
+              className="col-12"
+              style={{
+                padding: "1rem 0",
+                textAlign: "center",
+              }}
+            >
+              <Box id="calendars" animation="fadeIn">
+                {months.map(month => (
+                  <Month
+                    key={format(month.startDate, "MM")}
+                    openModal={openModal}
+                    {...month}
+                  />
+                ))}
+              </Box>
+              {showModal && (
+                <ModalEvent
+                  onClose={() => setShowModal(false)}
+                  {...modalData!}
+                />
+              )}
+            </div>
+          </div>
           {/*show modal here */}
         </header>
       )}
@@ -193,14 +200,15 @@ const indexQuery = graphql`
         monthLimit
       }
     }
-    allGoogleSheetFormResponses1Row {
+    allGoogleRenameSheet {
       edges {
         node {
           id
-          eventName: whatisthename
+          eventName: whatIsTheName
           date: when
-          eventLink: linktotheevent
+          eventLink: link
           place: where
+          time: timestamp
         }
       }
     }

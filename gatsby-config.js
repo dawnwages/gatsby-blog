@@ -3,15 +3,6 @@ const siteConfig = require("./siteConfig")
 require("dotenv").config()
 const assert = require("assert")
 
-const getEnv = (env, key) => {
-  assert(
-    env[key],
-    `Please add the value for ${key} in your environment variables.`
-  )
-
-  return env[key]
-}
-
 const buildCredentials = ({
   PROJECT_ID,
   PRIVATE_KEY,
@@ -25,14 +16,18 @@ const buildCredentials = ({
   private_key_id: PRIVATE_KEY_ID,
   private_key: PRIVATE_KEY.replace(/(\\r)|(\\n)/g, "\n"),
   client_email: CLIENT_EMAIL,
-  client_id: CLIENT_ID,
+  client_id: "",
   auth_uri: "https://accounts.google.com/o/oauth2/auth",
   token_uri: "https://oauth2.googleapis.com/token",
   auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs",
   client_x509_cert_url: CERT_URL,
 })
 
-const SPREADSHEET_ID = "1r2oi-hqSUnFZ2CtRfhv-tRvGoKuWVSPVeTQLYIuUFgc"
+console.log(buildCredentials(process.env))
+
+const spreadsheetid = siteConfig.spreadsheetLink.split("/")[
+  siteConfig.spreadsheetLink.split("/").length - 2
+]
 
 module.exports = {
   siteMetadata: {
@@ -173,5 +168,13 @@ module.exports = {
     `gatsby-plugin-netlify`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: "gatsby-source-google-spreadsheets",
+      options: {
+        spreadsheetId: spreadsheetid,
+        worksheetTitle: "rename",
+        credentials: buildCredentials(process.env),
+      },
+    },
   ],
 }

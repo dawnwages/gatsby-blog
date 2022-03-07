@@ -101,15 +101,15 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
   const typeDefs = `
-    type googleSheetFormResponses1Row implements Node @dontInfer {
+    type googleSheetFormResponses1 implements Node @dontInfer {
       id: ID!
       parent: Node
       children: [Node!]!
       internal: Internal!
       timestamp: String
-      whatisthename: String
+      whatIsTheName: String
       when: String
-      linktotheevent: String
+      link: String
       where: String
     }
   `
