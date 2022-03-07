@@ -8,6 +8,7 @@
     "url": "https://github.com/vaporwavy/gatsby-london-after-midnight/issues"
   },
   "dependencies": {
+    "chokidar": "^3.5.3",
     "dotenv": "^16.0.0",
     "gatsby": "^2.28.1",
     "gatsby-cli": "^2.15.0",

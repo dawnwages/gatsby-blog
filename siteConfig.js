@@ -13,5 +13,5 @@ module.exports = {
   limitMonthInTheFuture: 5,
   theme: require("./themes/main.json"),
   spreadsheetLink:
-    "https://docs.google.com/spreadsheets/d/1r2oi-hqSUnFZ2CtRfhv-tRvGoKuWVSPVeTQLYIuUFgc/edit?usp=sharing",
+    "https://docs.google.com/spreadsheets/d/1r2oi-hqSUnFZ2CtRfhv-tRvGoKuWVSPVeTQLYIuUFgc/edit#",
 }
