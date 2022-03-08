@@ -50,8 +50,22 @@ const BlogIndex = ({ data }, location) => {
   return (
     <Layout title={siteTitle}>
       <SEO
-        title="Posts"
-        keywords={[`devlog`, `blog`, `gatsby`, `javascript`, `react`]}
+        title="GlitterTech Software Co-op"
+        keywords={[
+          `devlog`,
+          `blog`,
+          `gatsby`,
+          `javascript`,
+          `react`,
+          `calendar`,
+          `consulting`,
+          `software`,
+          `django`,
+          `python`,
+          `webdev`,
+          `NGO`,
+          `Non-Profit`,
+        ]}
       />
 
       {data.site.siteMetadata.description && (

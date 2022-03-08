@@ -14,15 +14,21 @@ const AboutPage = ({ data }, location) => {
   return (
     <Layout title={siteTitle}>
       <SEO
-        title="Hire Me"
+        title="GlitterTech Software Co-op"
         keywords={[
-          `consultant`,
+          `devlog`,
           `blog`,
           `gatsby`,
           `javascript`,
           `react`,
-          `dawn`,
+          `calendar`,
+          `consulting`,
+          `software`,
           `django`,
+          `python`,
+          `webdev`,
+          `NGO`,
+          `Non-Profit`,
         ]}
       />
 

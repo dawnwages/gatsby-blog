@@ -1,8 +1,8 @@
 module.exports = {
   name: "Glitter Tech",
   shortName: "GT",
-  description: "We are a worker-owned tech cooperative.",
-  subDesc: "software development and support",
+  description: "We are a worker-owned tech collective.",
+  subDesc: "software development and support services.",
   // description:
   //   "Django, React, Python, JavaScript, Wagtail, Gatsby, Progressive Web Apps, authenTECH, BlackTech, QueerTech, Travel Tech, CivicTech",
   url: "https://glittertech.dev", // Domain of your site without prefix!
