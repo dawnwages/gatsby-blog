@@ -68,8 +68,10 @@ const EventDescription = ({ event }: { event: EventInfo }) => (
     height={{ min: "auto" }}
   >
     <Text a11yTitle="Event time" margin="small" color="calendar-modal-text">
-      {/*{format(new Date(event.node.date).setUTCMinutes(180), "HH:mm")}*/}
-      {event.node.time}
+      {/*{(event.node.time.length > 6 ) ? event.node.time.slice(0, -3) : 'test'}*/}
+      {event.node.time.length > 7
+        ? event.node.time.slice(0, -6) + " " + event.node.time.slice(-2)
+        : event.node.time}
     </Text>
     <Box margin="small" width="medium">
       <Text
