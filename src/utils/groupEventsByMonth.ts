@@ -25,6 +25,7 @@ const groupEventsByMonth = (
   events: EventInfo[],
   monthsDifferenceThreshold: number
 ): MonthInfo[] => {
+  console.log(events[5])
   const today = new Date()
   const eventsByMonthKey = events
     .filter(event =>

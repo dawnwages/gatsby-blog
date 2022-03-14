@@ -61,7 +61,8 @@ const EventDescription = ({ event }: { event: EventInfo }) => (
     justify="center"
   >
     <Text a11yTitle="Event time" margin="small" color="calendar-modal-text">
-      {format(new Date(event.node.date).setUTCMinutes(180), "HH:mm")}
+      {/*{format(new Date(event.node.date).setUTCMinutes(180), "HH:mm")}*/}
+      {event.node.time}
     </Text>
     <Box margin="small" width="medium">
       <Text

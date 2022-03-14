@@ -40,7 +40,7 @@ const AboutPage = ({ data }, location) => {
                 }}
               >
                 <h6 id="">
-                  <a href={"mailto:dawn.wages@gmail.com"}>Hire Me</a>
+                  <a href={"mailto:contact@glittertech.dev"}>Hire Me</a>
                 </h6>
               </div>
             </div>

@@ -221,7 +221,7 @@ const indexQuery = graphql`
           date: when
           eventLink: link
           place: where
-          time: timestamp
+          time: whatTime
         }
       }
     }
