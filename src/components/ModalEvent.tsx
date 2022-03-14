@@ -14,7 +14,7 @@ const ModalEvent = ({ onClose, date, events }: Props) => (
       direction="column"
       align="center"
       tag="section"
-      margin="small"
+      margin={{ top: "small", left: "small", right: "small", bottom: "55px" }}
       overflow={{ vertical: "auto" }}
     >
       {events.map((event, i, arr) => (
