@@ -137,7 +137,7 @@ const AboutPage = ({ data }, location) => {
 
           <dl>
             <dt>
-              <span role={"image"} aira-label={"skateboard"}>
+              <span role="img" aria-label="skateboard">
                 🛹
               </span>{" "}
               Design and build rad web applications in React, Vue, Django, Flask
@@ -145,21 +145,21 @@ const AboutPage = ({ data }, location) => {
             </dt>
             <br></br>
             <dt>
-              <span role={"image"} aira-label={"yarn"}>
+              <span role="img" aria-label="yarn">
                 🧶
               </span>{" "}
               Provide services for non-profits and NGOs.
             </dt>
             <br></br>
             <dt>
-              <span role={"image"} aira-label={"unicorn"}>
+              <span role="img" aria-label="unicorn">
                 🦄
               </span>{" "}
               We love the Wagtail and Django Community and we give back!
             </dt>
             <br></br>
             <dt>
-              <span role={"image"} aira-label={"hamburger"}>
+              <span role="img" aria-label="hamburger">
                 🍔
               </span>{" "}
               Progressive Web Applications.

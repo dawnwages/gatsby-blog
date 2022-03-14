@@ -23,8 +23,6 @@ const buildCredentials = ({
   client_x509_cert_url: CERT_URL,
 })
 
-console.log(buildCredentials(process.env))
-
 const spreadsheetid = siteConfig.spreadsheetLink.split("/")[
   siteConfig.spreadsheetLink.split("/").length - 2
 ]

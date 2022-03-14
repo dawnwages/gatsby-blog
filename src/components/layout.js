@@ -8,12 +8,12 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     scroll-behavior: smooth;
-        overflow-y: scroll;
+        overflow-y: auto;
   }
 `
 
 const Layout = props => {
-  const len = 40
+  // const len = 40
   const { title, children } = props
   const [toggleNav, setToggleNav] = React.useState(false)
   const skillsDict = {
@@ -34,10 +34,10 @@ const Layout = props => {
       "Scalable Code",
     ],
   }
-  const skillsText = skillsDict["software"].reduce((skill, val, index) => {
-    let skillText = `❑ ${skill} `
-    return skillText + val
-  })
+  // const skillsText = skillsDict["software"].reduce((skill, val, index) => {
+  //   let skillText = `❑ ${skill} `
+  //   return skillText + val
+  // })
   const emailTitle = "Join The Team"
   const bodyContent =
     "Hi Glitter Tech Team%2C" +
@@ -138,7 +138,7 @@ const Layout = props => {
                   <Link to={`/about-us/`}>About Us</Link>
                 </li>
                 <li className="nav-home nav-current" role="menuitem">
-                  <Link to={`mailto:contact@glittertech.dev`}>Contact</Link>
+                  <a href="mailto:contact@glittertech.dev">Contact</a>
                 </li>
                 {/*<li className="nav-home nav-current" role="menuitem">*/}
                 {/*  <Link to={`/`}>Services</Link>*/}

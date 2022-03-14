@@ -53,7 +53,11 @@ const AboutPage = ({ data }, location) => {
             />
             <figcaption>
               taken by{" "}
-              <a href={"https://bartpawlik.format.com/"} target={"_blank"}>
+              <a
+                href={"https://bartpawlik.format.com/"}
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 Bartosz Pawlik
               </a>
             </figcaption>
@@ -83,7 +87,11 @@ const AboutPage = ({ data }, location) => {
                   background: "#1d1d1f",
                 }}
               >
-                <a href={"http://www.dawnwages.info/apps"} target={"_blank"}>
+                <a
+                  href={"http://www.dawnwages.info/apps"}
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
                   Portfolio
                 </a>
               </div>
@@ -107,7 +115,7 @@ const AboutPage = ({ data }, location) => {
             </dd>
             <br></br>
             <dt>
-              <span role={"image"} aira-label={"yarn"}>
+              <span role={"image"} aria-label={"yarn"}>
                 🧶
               </span>{" "}
               Middleware and Back End
@@ -119,7 +127,7 @@ const AboutPage = ({ data }, location) => {
             </dd>
             <br></br>
             <dt>
-              <span role={"image"} aira-label={"unicorn"}>
+              <span role={"image"} aria-label={"unicorn"}>
                 🦄
               </span>{" "}
               User Experience
@@ -132,7 +140,7 @@ const AboutPage = ({ data }, location) => {
             </dd>
             <br></br>
             <dt>
-              <span role={"image"} aira-label={"hamburger"}>
+              <span role={"image"} aria-label={"hamburger"}>
                 🍔
               </span>{" "}
               Libraries and Static Site Generators
@@ -142,7 +150,7 @@ const AboutPage = ({ data }, location) => {
             </dd>
             <br></br>
             <dt>
-              <span role={"image"} aira-label={"squid"}>
+              <span role={"image"} aria-label={"squid"}>
                 🦑
               </span>{" "}
               Apps
@@ -167,7 +175,11 @@ const AboutPage = ({ data }, location) => {
           <h3 id="dynamic-styles"></h3>
           <p>
             She lives in Philadelphia with her{" "}
-            <a href={"http://www.dawnwages.info/theo"} target={"_blank"}>
+            <a
+              href={"http://www.dawnwages.info/theo"}
+              target={"_blank"}
+              rel="noreferrer"
+            >
               dog, Thelonious "Theo" Ace Hood Monk
             </a>{" "}
             learning the ukulele,{" "}

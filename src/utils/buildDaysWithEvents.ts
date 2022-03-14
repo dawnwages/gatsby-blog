@@ -6,7 +6,6 @@ const buildDaysWithEvents = (
   events: EventInfo[]
 ): ModalData[] => {
   const days = getDaysInMonth(startDate)
-  console.log("build days with events", events)
   return Array(days)
     .fill(null)
     .map((x, i) => {

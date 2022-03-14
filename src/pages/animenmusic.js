@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
-import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -17,41 +16,6 @@ const ElementsPage = ({ data }, location) => {
 
       <article className="post-content page-template no-image">
         <div className="post-content-body">
-          <h1 id="heading-level-1">Music</h1>
-          <hr />
-          <iframe
-            src="https://open.spotify.com/embed/playlist/6NqvEFfTpCgwMCOzvUUBMN"
-            width="300"
-            height="380"
-            frameborder="0"
-            allowtransparency="true"
-            allow="encrypted-media"
-          ></iframe>
-          <iframe
-            src="https://open.spotify.com/embed/playlist/0V48L8bR34QZvTbnuUxbY3"
-            width="300"
-            height="380"
-            frameborder="0"
-            allowtransparency="true"
-            allow="encrypted-media"
-          ></iframe>
-          <iframe
-            src="https://open.spotify.com/embed/playlist/77lF04dPPHLr8i9OCeaJMm"
-            width="300"
-            height="380"
-            frameborder="0"
-            allowtransparency="true"
-            allow="encrypted-media"
-          ></iframe>
-          <iframe
-            src="https://open.spotify.com/embed/playlist/4WqSW8NelSbVv3rEjQlQvX"
-            width="300"
-            height="380"
-            frameborder="0"
-            allowtransparency="true"
-            allow="encrypted-media"
-          ></iframe>
-
           <h1 id="heading-level-1">Anime</h1>
           <hr />
           <p>
@@ -60,7 +24,15 @@ const ElementsPage = ({ data }, location) => {
             not really up to date, but since I'm getting back into it lately
             (2020) I'd like to do a better job ot tracking what I watch.
           </p>
-          <h3 id="heading-level-2">Favorite 🔥💓</h3>
+          <h3 id="heading-level-2">
+            Favorite{" "}
+            <span role={"img"} aira-label={"fire"}>
+              🔥
+            </span>
+            <span role={"img"} aira-label={"heart"}>
+              💓
+            </span>
+          </h3>
           <p>
             I love strong female leads with deep back stories and intellectual
             plots with deamons. Oh the sweet theme of shinigamis coming out to
@@ -105,7 +77,12 @@ const ElementsPage = ({ data }, location) => {
             <li>Tokyo Ghoul</li>
           </ul>
 
-          <h3 id="heading-level-3">Currently Watching ⏳</h3>
+          <h3 id="heading-level-3">
+            Currently Watching{" "}
+            <span role={"img"} aria-label={"time"}>
+              ⏳
+            </span>
+          </h3>
           <p>
             Right now I'm catching up on what the internet has been on fire
             about.
